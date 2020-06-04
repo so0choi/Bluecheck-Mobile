@@ -8,7 +8,7 @@ import { Notifications } from 'expo';
 import * as Permissions from 'expo-permissions';
 import Constants from 'expo-constants';
 
-const PUSH_REGISTRATION_ENDPOINT = 'http://133.186.214.122:3000/token';
+const PUSH_REGISTRATION_ENDPOINT = 'http://133.186.150.88:3000/token';
 
 export default class App extends React.Component {
   state = {
@@ -71,7 +71,7 @@ export default class App extends React.Component {
 
   render() {
     return <WebView 
-    source={{ uri: 'http://133.186.214.122:3000/' }} 
+    source={{ uri: 'http://133.186.150.88:3000/' }} 
     style={{ paddingTop:20}} 
     />;
   } 
