@@ -5,7 +5,7 @@ import {
   Vibration
 } from 'react-native';
 import { Notifications } from 'expo'; 
-import * as Permissions from 'expo-permissions'; 
+import * as Permissions from 'expo-permissions';   
 import Constants from 'expo-constants';
 
 const PUSH_REGISTRATION_ENDPOINT = 'http://133.186.150.88:3000/token';
