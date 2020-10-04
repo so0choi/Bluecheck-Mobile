@@ -6,7 +6,18 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "serve": "node -r esm server/index.js"
+    "serve": "node -r esm server/index.js",
+    "create-global-node-modules-folder": "if not exist \"%appdata%\\npm\\node_modules\" mkdir %appdata%\\npm\\node_modules",
+    "npm-i-g": "npm i npm@latest -g",
+    "npm-check-i-g": "npm i npm-check@latest -g",
+    "eslint-i-g": "npm i eslint@latest -g",
+    "stylelint-i-g": "npm i stylelint@latest -g",
+    "npm-check-u-l": "npm-check \"C:\\Program Files\\nodejs\\node_modules\\npm\" -y",
+    "npm-check-u-g": "npm-check \"C:\\Program Files\\nodejs\\node_modules\\npm\" -y -g",
+    "npm-deep-update-l": "npm update --depth 9999 --dev",
+    "npm-deep-update-g": "npm update --depth 9999 --dev -g",
+    "npm-cache-clear": "npm cache clear --force",
+    "update-all-modules": "npm run create-global-node-modules-folder && npm run npm-i-g && npm run npm-check-i-g && npm run eslint-i-g && npm run stylelint-i-g && npm run npm-check-u-l && npm run npm-check-u-g && npm run npm-deep-update-l && npm run npm-deep-update-g && npm run npm-cache-clear"
   },
   "dependencies": {
     "esm": "^3.2.25",
